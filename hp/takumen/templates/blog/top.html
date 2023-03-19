@@ -1,0 +1,721 @@
+{% extends "base.html" %}
+{% block main %}
+<!-- Slider main container -->
+<div class='swiper-container top-mainimage'>
+<!-- Additional required wrapper -->
+<div class='swiper-wrapper'>
+<!-- Slides -->
+<div class='swiper-slide'>
+<a href="/rankings/hot"><img width="1140" height="460" src="https://takumen-assets.s3.ap-northeast-1.amazonaws.com/hot_sales.png" />
+</a></div>
+<div class='swiper-slide'>
+<a href="https://www.takumen.com/st/lp/12th_award/?utm_source=topslider&amp;utm_medium=banner"><img width="1140" height="460" src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/w39837o1z4ru587acis24aib05kd" />
+</a></div>
+<div class='swiper-slide'>
+<a href="https://www.takumen.com/st/lp/japan-best-ramen-awards-2022?utm_source=topslider&amp;utm_medium=banner"><img width="1140" height="460" src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/g1b3i8ip88j14k1lc9yx5crfntjv" />
+</a></div>
+<div class='swiper-slide'>
+<a href="https://www.takumen.com/magazines?category=interviews"><img width="1140" height="460" src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/gt4bz935198fd47ehgpdwftd6fv0" />
+</a></div>
+<div class='swiper-slide'>
+<a href="https://www.takumen.com/statics/social_gift"><img width="1140" height="460" src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/gyyf8zrxs0x50h684x2wgbh0ggqo" />
+</a></div>
+<div class='swiper-slide'>
+<a href="https://www.takumen.com/users/sign_up?utm_source=t"><img width="1140" height="460" src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/9whelpr73jf4elkbzjn06tqj71hh" />
+</a></div>
+</div>
+<!-- If we need pagination -->
+<div class='swiper-pagination'></div>
+</div>
+<div class='pc-none'>
+<p class='u-tx-red u-tx-bold'>ラーメン・つけ麺のNo.1 通販サイト</p>
+<p class='u-tx-bold'>　当日発送は月～土・午前8時45分まで！</p>
+</div>
+<div class='header-top-freesearch sp-only pc-none'>
+<form metod="post" action="/search" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="KyYWW0SLP1OgTV57S2ccjwrn0PQa2r4887DdHhgqi56iY5wOFcqNgR_MoqJmSBfyNhXOin5obnSNjDz94NYn3g" autocomplete="off" />
+<input class='free-search-input' name='keyword' placeholder='何かお探しですか？'>
+<input class='free-search-btn' type='submit' value='検索'>
+</form>
+
+</div>
+<!-- status -->
+<!-- top-new -->
+<div class='c-container'>
+<div class='news-tabs'>
+<input checked='checked' id='tab1' name='tab_item' type='radio'>
+<label class='tab_item' for='tab1'>お知らせ</label>
+<input id='tab2' name='tab_item' type='radio'>
+<label class='tab_item' for='tab2'>販売情報</label>
+<div class='tab_content' id='tab1_content'>
+<div class='top-news'>
+<div class='top-news__title'>
+<span class='top-news__date'>2023-01-27</span>
+<p>
+<a href="/news/1306">【※重要】大雪の影響に伴う配送遅延（一部地域）のお知らせ</a>
+</p>
+</div>
+<div class='top-news__title'>
+<span class='top-news__date'>2023-01-13</span>
+<p>
+<a href="/news/1302">【楽天ペイ】メンテナンス実施のお知らせ（1/18(水) 0:40-4:25）</a>
+</p>
+</div>
+<div class='top-news__title'>
+<span class='top-news__date'>2022-12-28</span>
+<p>
+<a href="/news/1247">【※重要】荒天の影響に伴う配送遅延（一部地域）のお知らせ</a>
+</p>
+</div>
+</div>
+</div>
+<div class='tab_content' id='tab2_content'>
+<div class='top-news'>
+<div class='top-news__title'>
+<span class='top-news__date'>2023-03-14</span>
+<p>
+<a href="/news/1304">【19:00スタート】「けやき すすきの本店 味噌ラーメン」曜日ごとのランク別先着販売につきまして</a>
+</p>
+</div>
+<div class='top-news__title'>
+<span class='top-news__date'>2023-03-14</span>
+<p>
+<a href="/news/1309">【19:00スタート】「らあめん 満家 ざるらあめん」曜日ごとのランク別先着販売につきまして</a>
+</p>
+</div>
+<div class='top-news__title'>
+<span class='top-news__date'>2023-03-07</span>
+<p>
+<a href="/news/1310">【19:00スタート】「特級鶏蕎麦 龍介 龍介つけ蕎麦」曜日ごとのランク別先着販売につきまして</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class='c-more news-more'><a href="/news">一覧へ</a></div>
+</div>
+<section class='top-new u-mt-30'>
+<div class='c-container'>
+<h2 class='c-bg-midashi u-bg-black u-tx-white'>新着らーめん・つけ麺</h2>
+<!-- /slider2 -->
+<div class='swiper-custom-parent'>
+<div class='swiper-container slider2'>
+<div class='swiper-wrapper'>
+<div class='swiper-slide'>
+<a href="/products/1536"><div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/dzjiackrnu061ja6c4tmsrrjs21d" />
+</div>
+<div class='c-card__text'>
+<p class='c-card__title ellipsis'>ちばから</p>
+<p class='c-card__tx1 ellipsis-row2'>伝説のww担々麺（神豚付き）</p>
+<p class='c-card__tx2 ellipsis-row2'>過去２回しかお店で提供したことのない激レア担々麺！類稀に見る濃厚な白ゴマペーストとお馴染みちばからド乳化スープとの相性抜群！スープの旨みと肉味噌の辛みも中毒性抜群だ！</p>
+<p class='c-price-tx u-tx-right c-price-include-tx-area'>
+<span class='c-price__num'>1,580</span>
+円
+<br>
+<span class='c-price-included-tx'>(税込1,706円)</span>
+</p>
+</div>
+</a></div>
+<div class='swiper-slide'>
+<a href="/products/296"><div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/z2u6l7w0qhzqmfcfkmq7f2hvk0rv" />
+</div>
+<div class='c-card__text'>
+<p class='c-card__title ellipsis'>味噌麺処 花道庵</p>
+<p class='c-card__tx1 ellipsis-row2'>味噌ラーメン</p>
+<p class='c-card__tx2 ellipsis-row2'>ボリューム、味ともにインパクトがあり、こってりとした濃厚味噌ラーメン。味噌ダレとスープを中華鍋で合わせ、丁寧に調理された本格味噌ラーメンは、味噌の上質な味が堪能でき、濃厚ながらあっさりとした後味を残します。</p>
+<p class='c-price-tx u-tx-right c-price-include-tx-area'>
+<span class='c-price__num'>1,050</span>
+円
+<br>
+<span class='c-price-included-tx'>(税込1,134円)</span>
+</p>
+</div>
+</a></div>
+<div class='swiper-slide'>
+<a href="/products/1389"><div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/7hc8k28mskzl0dq4hdmnsk1lc9aj" />
+</div>
+<div class='c-card__text'>
+<p class='c-card__title ellipsis'>からみそラーメンふくろう本店</p>
+<p class='c-card__tx1 ellipsis-row2'>からみそラーメン</p>
+<p class='c-card__tx2 ellipsis-row2'>山形県で生まれた「からみそラーメン」の特徴は、一般的な味噌よりも薄く、透明度の高い白いスープ。名古屋の地に合わせ、味噌の色が濃く独自にアレンジされた一杯になっている。</p>
+<p class='c-price-tx u-tx-right c-price-include-tx-area'>
+<span class='c-price__num'>1,000</span>
+円
+<br>
+<span class='c-price-included-tx'>(税込1,080円)</span>
+</p>
+</div>
+</a></div>
+<div class='swiper-slide'>
+<a href="/products/1168"><div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/f045z3sucgyqpn9w9jkypcg23ygz" />
+</div>
+<div class='c-card__text'>
+<p class='c-card__title ellipsis'>旭川中華そば風來堂</p>
+<p class='c-card__tx1 ellipsis-row2'>旭川中華そば</p>
+<p class='c-card__tx2 ellipsis-row2'>「麺　風來堂」のセカンドブランド店として、同店の2階に2017年オープン。店主の修行先である旭川の銘店「山頭火」会長から頂いた創業当時から変わらない「中華そば」と、魚節感を強めた中毒性の高い「旭煮干し」の2種類から選べる。</p>
+<p class='c-price-tx u-tx-right c-price-include-tx-area'>
+<span class='c-price__num'>1,050</span>
+円
+<br>
+<span class='c-price-included-tx'>(税込1,134円)</span>
+</p>
+</div>
+</a></div>
+<div class='swiper-slide'>
+<a href="/products/454"><div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/uov5ehpns648wzl5fn86tmjjql3a" />
+</div>
+<div class='c-card__text'>
+<p class='c-card__title ellipsis'>頑者</p>
+<p class='c-card__tx1 ellipsis-row2'>つけめん</p>
+<p class='c-card__tx2 ellipsis-row2'>2000年に埼玉・川越でオープン後、わずか半年で行列ができるほどに人気が増してきた、濃厚つけ麺ブームのパイオニア「頑者」！濃厚な豚骨魚介スープにたっぷりの魚粉を乗せ、店主特製のもっちり自家製麺を絡ませれば大満足間違いない。</p>
+<p class='c-price-tx u-tx-right c-price-include-tx-area'>
+<span class='c-price__num'>980</span>
+円
+<br>
+<span class='c-price-included-tx'>(税込1,058円)</span>
+</p>
+</div>
+</a></div>
+<div class='swiper-slide'>
+<a href="/products/1484"><div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/frwlcuj4m5il8vwmc8sh05qo26z8" />
+</div>
+<div class='c-card__text'>
+<p class='c-card__title ellipsis'>凌駕IDEA松本本店</p>
+<p class='c-card__tx1 ellipsis-row2'>ニボガッツ</p>
+<p class='c-card__tx2 ellipsis-row2'>長野県松本市を中心に展開する人気グループの総本山！スープに使用する食材はズバリ煮干のみ！老舗醸造元の風味豊かな甘露醤油と背脂を合わせれば極太麺との相性は抜群。</p>
+<p class='c-price-tx u-tx-right c-price-include-tx-area'>
+<span class='c-price__num'>1,240</span>
+円
+<br>
+<span class='c-price-included-tx'>(税込1,339円)</span>
+</p>
+</div>
+</a></div>
+<div class='swiper-slide'>
+<a href="/products/1399"><div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/9pf4mmn9l8oz1r325gbx1hod07s3" />
+</div>
+<div class='c-card__text'>
+<p class='c-card__title ellipsis'>雲林坊</p>
+<p class='c-card__tx1 ellipsis-row2'>汁あり担担麺</p>
+<p class='c-card__tx2 ellipsis-row2'>高級中華「神田雲林」系列の「雲林坊（ゆんりんぼう）」は担担麺・陳麻婆豆腐の専門店。飼育期間が長い点から肉の味がより強い老鶏に加え、北海道産ホタテ、干し貝柱などから時間をかけてじっくりと旨味を煮出した贅沢なスープはまさに極上。そこに、全粒粉を使用した褐色の細麺がもつ独特の風味や、自家製ラー油の芳ばしい辛味、花椒の痺れが重なることで、味はより複雑性を増す。百聞は一食に如かず、ぜひご賞味いただきたい。</p>
+<p class='c-price-tx u-tx-right c-price-include-tx-area'>
+<span class='c-price__num'>1,100</span>
+円
+<br>
+<span class='c-price-included-tx'>(税込1,188円)</span>
+</p>
+</div>
+</a></div>
+<div class='swiper-slide'>
+<a href="/products/802"><div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/4y0rpy1iv0wrdqdhoip9jsipft48" />
+</div>
+<div class='c-card__text'>
+<p class='c-card__title ellipsis'>すずき家</p>
+<p class='c-card__tx1 ellipsis-row2'>ラーメン（醤油）</p>
+<p class='c-card__tx2 ellipsis-row2'>ラーメン激戦区国道15号線沿線で、開店以来人気を博してきた「すずき家」。有名店で15年修行し、独自の改良を加えられたラーメンは、強力バーナーで炊きあげられたクリーミーな豚骨スープとキレのある醤油ダレのバランスが秀逸の一杯！　　　　　　　　</p>
+<p class='c-price-tx u-tx-right c-price-include-tx-area'>
+<span class='c-price__num'>1,300</span>
+円
+<br>
+<span class='c-price-included-tx'>(税込1,404円)</span>
+</p>
+</div>
+</a></div>
+<div class='swiper-slide'>
+<a href="/products/1478"><div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/7cwgbem51qviai87fzorri05og7c" />
+</div>
+<div class='c-card__text'>
+<p class='c-card__title ellipsis'>茨城豚そば特龍本店</p>
+<p class='c-card__tx1 ellipsis-row2'>特龍豚そば</p>
+<p class='c-card__tx2 ellipsis-row2'>混ぜきれないほどのガラが溶け込んだパンチのある濃厚微乳化なスープがワシワシの極太麺に絡みつく食べ応え抜群の一杯！肉厚なチャーシュー、スープ、麺の絡み具合は文句なしの一言</p>
+<p class='c-price-tx u-tx-right c-price-include-tx-area'>
+<span class='c-price__num'>1,100</span>
+円
+<br>
+<span class='c-price-included-tx'>(税込1,188円)</span>
+</p>
+</div>
+</a></div>
+</div>
+</div>
+<div class='swiper-button-prev swiper-custom-button slide2-prev'>
+<img alt="" widrth="22" height="22" src="https://d2dtt2tgvmlnxf.cloudfront.net/packs/media/images/top/sp-slide-prev-45692a0e5b6f14c9b1fc8e7e6a601c15.svg" />
+</div>
+<div class='swiper-button-next swiper-custom-button slide2-next'>
+<img alt="" widrth="22" height="22" src="https://d2dtt2tgvmlnxf.cloudfront.net/packs/media/images/top/sp-slide-next-3a13e85ff6ad75077aa451470b660c8d.svg" />
+</div>
+</div>
+</div>
+<!-- .c-more %a 一覧へ -->
+</section>
+<!-- top-ranking -->
+<section class='top-ranking'>
+<div class='c-container'>
+<h2 class='c-bg-midashi u-bg-beige u-tx-black'>
+月間ランキング
+<span class='u-tx-s u-tx-normal u-ml-15'>
+※2023年2月販売実績
+</span>
+</h2>
+<article class='top-ranking-ramen'>
+<h3 class='ranking-midashi'>総合</h3>
+<ul class='c-card-row'>
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/1267"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/i8f59wz6hdq35m8t4a36gr8w4h78" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>俺の生きる道 白山店</p>
+<p class='c-card__tx1 ellipsis-row2'>夢のラーメン（味付き脂付き）</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>お取り寄せラーメン オブ・ザ・イヤー総合大賞3連覇を果たし、ついに殿堂入り！数多くのメディアからも取り上げられ、その勢いはとどまるところを知らない。</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,230</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,328円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/1272"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/cbrxtdisykejwn9u104j8b4oo6ns" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>元祖スタミナ満点らーめん すず鬼</p>
+<p class='c-card__tx1 ellipsis-row2'>スタ満ソバ</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>究極の中毒性！抜群のジャンク性！衝撃の新ジャンルラーメン「スタミナ満点ソバ」。2019年にオープンし、大ブレイクを果たした同店。今では各地に「すず鬼インスパイア系」が出現し、「スタ満」の名は一気に全国区へ。スープのパンチ力、麺の凶暴性、具材の量、全てが規格外！！</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,150</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,242円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/165"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/ijex3krvub3x10cifgucf1wozs9i" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>ちばから</p>
+<p class='c-card__tx1 ellipsis-row2'>らーめん</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>千葉県市原市の郊外にひときわ目立つ大行列を作り出す「ちばから」。ラーメン二郎出身でセンス抜群の店主が作るラーメンは、荒々しさの中に繊細なバランスが感じられ、二郎インスパイア系の中でもトップレベルの実力と人気を誇る。</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,150</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,242円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+</ul>
+<div class='c-gray-more'>
+<a href="/rankings/total">一覧へ</a>
+</div>
+</article>
+<article class='top-ranking-ramen'>
+<h3 class='ranking-midashi'>ラーメン</h3>
+<ul class='c-card-row'>
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/1267"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/i8f59wz6hdq35m8t4a36gr8w4h78" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>俺の生きる道 白山店</p>
+<p class='c-card__tx1 ellipsis-row2'>夢のラーメン（味付き脂付き）</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>お取り寄せラーメン オブ・ザ・イヤー総合大賞3連覇を果たし、ついに殿堂入り！数多くのメディアからも取り上げられ、その勢いはとどまるところを知らない。</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,230</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,328円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/1272"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/cbrxtdisykejwn9u104j8b4oo6ns" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>元祖スタミナ満点らーめん すず鬼</p>
+<p class='c-card__tx1 ellipsis-row2'>スタ満ソバ</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>究極の中毒性！抜群のジャンク性！衝撃の新ジャンルラーメン「スタミナ満点ソバ」。2019年にオープンし、大ブレイクを果たした同店。今では各地に「すず鬼インスパイア系」が出現し、「スタ満」の名は一気に全国区へ。スープのパンチ力、麺の凶暴性、具材の量、全てが規格外！！</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,150</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,242円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/165"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/ijex3krvub3x10cifgucf1wozs9i" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>ちばから</p>
+<p class='c-card__tx1 ellipsis-row2'>らーめん</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>千葉県市原市の郊外にひときわ目立つ大行列を作り出す「ちばから」。ラーメン二郎出身でセンス抜群の店主が作るラーメンは、荒々しさの中に繊細なバランスが感じられ、二郎インスパイア系の中でもトップレベルの実力と人気を誇る。</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,150</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,242円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+</ul>
+<div class='c-gray-more'>
+<a href="/rankings/ramen">一覧へ</a>
+</div>
+</article>
+<article class='top-ranking-tukemen'>
+<h3 class='ranking-midashi'>つけ麺</h3>
+<ul class='c-card-row'>
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/295"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/qo6e0p2ke7tvifvv3m1qwq810tmc" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>中華蕎麦 とみ田</p>
+<p class='c-card__tx1 ellipsis-row2'>つけめん</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>超濃厚な魚介豚骨スープが特徴のつけめんを看板に掲げる「中華蕎麦とみ田」。OPENから今もなお、未だにその味を求めて早朝から行列を成す。小麦粉から独自開発した、唯一無二の自家製極太麺は、他店の店主も舌を巻くほどの完成度。</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,080</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,166円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/1501"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/24iukbco6m971lmqkzv6587wasdw" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>中華蕎麦 とみ田</p>
+<p class='c-card__tx1 ellipsis-row2'>元祖 特製もりそば</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>つけ麺の生みの親、故・山岸一雄氏が旧東池袋大勝軒で提供していた味を、孫弟子・富田治が現代に再現。甘味と酸味の絶妙なつけ汁にツルツルの自家製太麺が、どこか懐かしく、ハマる旨さ！</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,050</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,134円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/428"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/qxlg5eodtpbdxonggwi9wprypowh" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>麺屋一燈</p>
+<p class='c-card__tx1 ellipsis-row2'>濃厚魚介つけ麺</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>2010年6月のオープン直後から大行列を作りだし、「食べログ東京ベストラーメン大賞」等、数多くの賞を受賞してきた麺屋一燈。「ラーメンで人を幸せにしたい」を合言葉に作られた、誰もが認める濃厚魚介つけ麺が宅麺に堂々の登場！</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,111</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,200円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+</ul>
+<div class='c-gray-more'>
+<a href="/rankings/dipping">一覧へ</a>
+</div>
+</article>
+<article class='top-ranking-jiroinspire'>
+<h3 class='ranking-midashi'>二郎インスパイア</h3>
+<ul class='c-card-row'>
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/1267"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/i8f59wz6hdq35m8t4a36gr8w4h78" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>俺の生きる道 白山店</p>
+<p class='c-card__tx1 ellipsis-row2'>夢のラーメン（味付き脂付き）</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>お取り寄せラーメン オブ・ザ・イヤー総合大賞3連覇を果たし、ついに殿堂入り！数多くのメディアからも取り上げられ、その勢いはとどまるところを知らない。</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,230</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,328円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/1272"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/cbrxtdisykejwn9u104j8b4oo6ns" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>元祖スタミナ満点らーめん すず鬼</p>
+<p class='c-card__tx1 ellipsis-row2'>スタ満ソバ</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>究極の中毒性！抜群のジャンク性！衝撃の新ジャンルラーメン「スタミナ満点ソバ」。2019年にオープンし、大ブレイクを果たした同店。今では各地に「すず鬼インスパイア系」が出現し、「スタ満」の名は一気に全国区へ。スープのパンチ力、麺の凶暴性、具材の量、全てが規格外！！</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,150</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,242円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+<li class='u-border-graydb'>
+<div class='c-card-row__inbox'>
+<a href="/products/165"><div class='c-flex-sp'>
+<div class='c-card-photo'>
+<img src="https://takumen-v3.s3.ap-northeast-1.amazonaws.com/ijex3krvub3x10cifgucf1wozs9i" />
+</div>
+<div class='c-card-row__text'>
+<p class='c-card__title ellipsis'>ちばから</p>
+<p class='c-card__tx1 ellipsis-row2'>らーめん</p>
+<div class='c-flex-sp'>
+<p class='c-card__tx2 ellipsis-row2'>千葉県市原市の郊外にひときわ目立つ大行列を作り出す「ちばから」。ラーメン二郎出身でセンス抜群の店主が作るラーメンは、荒々しさの中に繊細なバランスが感じられ、二郎インスパイア系の中でもトップレベルの実力と人気を誇る。</p>
+<br>
+</div>
+<p class='c-price-tx u-tx-right'>
+<span class='c-price__num'>1,150</span>
+円
+</p>
+<p class='c-price__taxin'>(税込1,242円)</p>
+</div>
+</div>
+</a></div>
+</li>
+
+</ul>
+<div class='c-gray-more'>
+<a href="/rankings/inspire">一覧へ</a>
+</div>
+</article>
+</div>
+</section>
+<div class='top-magazinearea'>
+<div class='c-container'>
+<section class='pickup-area'>
+<h3 class='c-midashi'>宅麺マガジン</h3>
+<div class='pickup-list-area'>
+<div class='top-pickup'>
+<div class='top-pickup__img'>
+<a href='/magazines/tatikawa-must-eat-ramen'>
+<img src='https://images.microcms-assets.io/protected/ap-northeast-1:2274ef17-f0c8-4beb-ae31-8100b23b8c38/service/takumenmagazine/media/tachikawa-inosyo.jpg?fit=max&amp;w=400&amp;h=400&amp;fm=webp'>
+</a>
+</div>
+<div class='top-pickup__txarea'>
+<p class='top-pickup__title ellipsis-row2'>
+<a href='/magazines/tatikawa-must-eat-ramen'>【2023年版】立川駅ラーメン10選 ！立川駅に行ったら、絶対行くべき人気店</a>
+</p>
+<div class='c-flex-tab' style='margin-top: 5px;'>
+<p class='pickup__cate magazine-cate'>
+<a style='font-size: 1.2rem'>ラーメンまとめ</a>
+</p>
+<p class='magazine-date' style='margin-left: 10px;'>
+<a style='font-size: 1.2rem'>2023年03月16日</a>
+</p>
+</div>
+</div>
+</div>
+<div class='top-pickup'>
+<div class='top-pickup__img'>
+<a href='/magazines/koriyama-must-eat-ramen'>
+<img src='https://images.microcms-assets.io/assets/8455d3d4006449859fbae2bb1ede541a/9ecb9e5d566b4fe8bf0dadde96784a4b/koriyama_001.jpg?fit=max&amp;w=400&amp;h=400&amp;fm=webp'>
+</a>
+</div>
+<div class='top-pickup__txarea'>
+<p class='top-pickup__title ellipsis-row2'>
+<a href='/magazines/koriyama-must-eat-ramen'>【2023年版】ここだけは絶対に外せない！郡山の人気ラーメン店10選</a>
+</p>
+<div class='c-flex-tab' style='margin-top: 5px;'>
+<p class='pickup__cate magazine-cate'>
+<a style='font-size: 1.2rem'>ラーメンまとめ</a>
+</p>
+<p class='magazine-date' style='margin-left: 10px;'>
+<a style='font-size: 1.2rem'>2023年03月16日</a>
+</p>
+</div>
+</div>
+</div>
+<div class='top-pickup'>
+<div class='top-pickup__img'>
+<a href='/magazines/namba-must-eat-ramen'>
+<img src='https://images.microcms-assets.io/assets/8455d3d4006449859fbae2bb1ede541a/d8cb11c3daef41cda9da058963ef1e82/namba-menjiro.jpeg?fit=max&amp;w=400&amp;h=400&amp;fm=webp'>
+</a>
+</div>
+<div class='top-pickup__txarea'>
+<p class='top-pickup__title ellipsis-row2'>
+<a href='/magazines/namba-must-eat-ramen'>【2023年版】難波エリアのラーメン10選！ここだけは押さえておきたい人気店</a>
+</p>
+<div class='c-flex-tab' style='margin-top: 5px;'>
+<p class='pickup__cate magazine-cate'>
+<a style='font-size: 1.2rem'>ラーメンまとめ</a>
+</p>
+<p class='magazine-date' style='margin-left: 10px;'>
+<a style='font-size: 1.2rem'>2023年03月16日</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class='c-more pickup-more'>
+<a href='/magazines'>一覧へ</a>
+</div>
+</section>
+</div>
+</div>
+
+<div class='top-intro u-mt-30'>
+<div class='top-intro-container'>
+<img class='top-intro__logo' height='78' src='https://d2dtt2tgvmlnxf.cloudfront.net/packs/media/images/top/intro-logo-b9285cd6d0fb2827a2f2fb6040b8c3c2.png' width='120'>
+<p class='text-w'>
+宅麺.comは、全国津々浦々の行列店のラーメン・つけ麺の中から
+<br>
+厳選した商品をお取り寄せできる通販サイトです。
+</p>
+<p class='text-w'>
+店舗で出されているスープと麺・具材をそのままを冷凍し、ご自宅で調理頂くことで、これまで店舗でしか味わえなかった味をご自宅や 職場でもお楽しみ頂けます。扱っている商品は、すべて店舗で実際に出されている商品と同じ商品です。
+</p>
+<div class='c-border-more'>
+<a href="/statics/about">もっと詳しく</a>
+</div>
+</div>
+</div>
+
+<script>
+  var mySwiper = new Swiper('.top-mainimage',
+  {
+    loop: true,
+    initialSlide: 0,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    pagination:
+    {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay:
+    {
+      delay: 3000,
+      disableOnInteraction: true
+    },
+    breakpoints:
+    {
+      767:
+      {
+        slidesPerView: 1,
+        spaceBetween: 0
+      }
+    }
+  })
+</script>
+<script>
+  var swiper = new Swiper('.slider2', {
+  initialSlide: 0,
+  
+  navigation: {
+    nextEl: '.slide2-next',
+    prevEl: '.slide2-prev',
+  },
+    slidesPerView: 2,
+    spaceBetween: 10,
+    loop: true,
+    
+    breakpoints: {
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 20
+      }
+      ,
+      992: {
+      slidesPerView: 4,
+      spaceBetween: 20
+      }  
+    }
+  });
+</script>
+{% endblock %}
