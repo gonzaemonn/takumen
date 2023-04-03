@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block main %}
+
+{% if items %}
+    <div class="text-center my-5">
+        <div class="row">
+            {% for item in items %}
+                <div class="col-lg-3 col-md-6">
+                    <div class="card img-thumbnail itemlist mb-3">
+                        <img src="{{ item.image.url }}" alt="" class="card-img-top card-thum">
+                        <div class="card-body text-center px-2 py-3">
+                            <p class="mb-0 text-secondary">{{ item.title }}</p>
+                            <h4 class="font-weight-bold">
+                                {{ item.price }}円
+                            </h4>
+                            <a href="{% url 'product' item.slug %}" class="stretched-link"></a> 
+                            <a href="{% url 'product' item.slug %}">詳細</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% else %}
+    <p>該当する商品はありません。</p>
+{% endif %}
+<div class='c-container'>
+    <ul class='breadcrumb'>
+    <li><a href="/">トップ</a></li>
+    <li>商品を探す</li>
+    </ul>
+    </div>
+    <!-- <div id="search" data="{&quot;genre&quot;:&quot;keyword&quot;,&quot;keyword&quot;:&quot;&quot;}"></div> -->
+    <script src="https://d2dtt2tgvmlnxf.cloudfront.net/packs/js/search-6162bb0ed098e2d716ce.js"></script>
+    <link rel="stylesheet" media="screen" href="https://d2dtt2tgvmlnxf.cloudfront.net/packs/css/search-fa4b3605.css" />
+
+{% endblock %}
+
+
+

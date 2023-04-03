@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "takumen.apps.TakumenConfig",
     "accounts.apps.AccountsConfig",
     "django_bootstrap5",
+    "cart.apps.CartConfig",
 ]
 
 MIDDLEWARE = [
@@ -128,6 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATICFILES_DIRS = [BASE_DIR / "static_local"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

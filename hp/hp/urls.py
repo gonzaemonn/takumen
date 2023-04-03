@@ -19,12 +19,15 @@ from django.urls import path,include
 from django.conf.urls.static import static
 from django.conf import settings
 
-from takumen.views import top
+from takumen.views import top,search
 
 urlpatterns = [
     path('', top, name='top'),
+    path('search/', search, name='search'),
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
+    path("cart/", include("cart.urls")),
+    path('',include("takumen.urls")),
 ]
 
 if settings.DEBUG:

@@ -1,3 +1,4 @@
+{% load cart_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang='ja'>
@@ -14,7 +15,7 @@
 <script src="https://d2dtt2tgvmlnxf.cloudfront.net/packs/js/common-3525b927bbea8daa231c.js"></script>
 <script src="https://d2dtt2tgvmlnxf.cloudfront.net/packs/js/style-18de7461d5fbc7f37fc0.js"></script>
 <link rel="stylesheet" media="screen" href="https://d2dtt2tgvmlnxf.cloudfront.net/packs/css/style-1c7a8da3.css" />
-
+<link rel="stylesheet" href="{% static 'css/takumen.css' %}">
 <!-- Google Tag Manager -->
 <script>
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -63,29 +64,33 @@
 </div>
 <div class='c-header__right'>
 <div class='header-top-freesearch sp-none'>
-<form metod="post" action="/search" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="e7Qzw00Yk7Okxx93LAF5FFisQjF014Q5DL1OrIX7Q4Ly8bmWHFkhYRtG464BLnJpZF5cTxBlVHFyga9PfQfvwg" autocomplete="off" />
-<input type="hidden" name="genre" id="genre" value="keyword" autocomplete="off" />
-<input type="text" name="keyword" id="keyword" class="free-search-input" placeholder="何かお探しですか？" />
-<input type="submit" name="commit" value="検索" class="free-search-btn" data-disable-with="検索" />
+
+<form method="post" action="{% url 'search' %}">
+  {% csrf_token %}
+  <input type="text" name="keyword" id="keyword" class="free-search-input" placeholder="何かお探しですか？" />
+  <input type="submit" name="commit" value="検索" class="free-search-btn" />
 </form>
+
 
 </div>
 <div class='header-search'>
 <div class='search-box'>
-<a href="/search"><img width="24" height="24" class="search-ico" src="https://d2dtt2tgvmlnxf.cloudfront.net/packs/media/images/common/ico-search-6620d0e77d4ca67a4cf0c6ce03579c54.svg" />
+<a href="{% url 'search' %}"><img width="24" height="24" class="search-ico" src="https://d2dtt2tgvmlnxf.cloudfront.net/packs/media/images/common/ico-search-6620d0e77d4ca67a4cf0c6ce03579c54.svg" />
 </a><span class='search-tx'>
-<a href="/products">商品を探す</a>
+<a href="{% url 'search' %}">商品を探す</a>
 </span>
 </div>
 </div>
 <div class='header-cart'>
 <div class='my-cart'>
-<a href='/carts'>
+<a href="{% url 'order' %}">
 <img width="38" height="38" class="cart-ico" src="https://d2dtt2tgvmlnxf.cloudfront.net/packs/media/images/common/ico-cart-4b7e0deddea83bdfeff795a2c6b96ce9.svg" />
 </a>
 </div>
 <span>
-<a href='/carts'>カート</a>
+<a href="{% url 'order' %}">カート<span class="badge badge-pill badge-warning">
+  {{ request.user|itemCount }}
+</span></a>
 </span>
 </div>
 </div>

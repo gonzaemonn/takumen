@@ -1,0 +1,21 @@
+
+.image-wrapper {
+    text-align: center;
+  }
+
+
+.image-wrapper img {
+    width: 200px;  /* リサイズ後の幅を指定する */
+    overflow: hidden; /* 画像がリサイズされた際にはみ出た部分を切り捨てる */
+    vertical-align: middle;
+}
+
+.product img {
+    height: 350px;
+    object-fit: contain;
+}
+
+.itemlist img {
+    height: 150px;
+    object-fit: contain;
+}
