@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django import forms
 
 # Create your models here.
 class Information(models.Model):
@@ -14,3 +15,8 @@ class Information(models.Model):
 
     def __str__(self):
         return self.title
+
+class InformationForm(forms.ModelForm):
+    class Meta:
+        model = Information
+        fields = ('mail','name','kana','phone','content','content2','order','image')

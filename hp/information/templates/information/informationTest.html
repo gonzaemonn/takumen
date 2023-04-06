@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block main %}
+
+<h1>text</h1>
+<form action="{% url 'information_model' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">送信</button>
+</form>
+
+{% endblock %}
