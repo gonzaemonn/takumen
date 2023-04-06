@@ -28,6 +28,8 @@ urlpatterns = [
     path("accounts/", include("accounts.urls")),
     path("cart/", include("cart.urls")),
     path('',include("takumen.urls")),
+    path('',include("information.urls")),
+    path('information/', include("information.urls")),
 ]
 
 if settings.DEBUG:

@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "accounts.apps.AccountsConfig",
     "django_bootstrap5",
     "cart.apps.CartConfig",
+    "information.apps.InformationConfig",
 ]
 
 MIDDLEWARE = [
